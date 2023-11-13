@@ -1,6 +1,8 @@
 # app_biblioteca
 aplicación movil - Apple
 
+# INSTALAR LAS DEPENDENCIAS Y ACTUALIZARLAR
+<img width="1138" alt="Captura de pantalla 2023-11-12 a la(s) 20 45 12" src="https://github.com/JulioVargas26/app_biblioteca/assets/84108359/f267325a-efdf-4997-94a9-119cafdb988a">
 
 # ESQUEMA GENERAL DEL PROYECTO
 <img width="664" alt="Captura de pantalla 2023-11-12 a la(s) 19 37 59" src="https://github.com/JulioVargas26/app_biblioteca/assets/84108359/e0883b2a-efca-4dc4-8742-7f35f5ab5d0c">
