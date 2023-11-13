@@ -27,6 +27,12 @@
 		AF4EF7202B017C2E00873222 /* LibroApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF71F2B017C2E00873222 /* LibroApiViewController.swift */; };
 		AF4EF7222B017DC400873222 /* ItemLibroCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF7212B017DC400873222 /* ItemLibroCollectionViewCell.swift */; };
 		AF4EF7242B01833200873222 /* UserEdiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF7232B01833200873222 /* UserEdiViewController.swift */; };
+		AF4EF7432B01B85200873222 /* ItemApiAutorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF7422B01B85200873222 /* ItemApiAutorTableViewCell.swift */; };
+		AF4EF7452B01B86E00873222 /* ItemApiEditorialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF7442B01B86E00873222 /* ItemApiEditorialTableViewCell.swift */; };
+		AF4EF7472B01B88100873222 /* ItemApiLibroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF7462B01B88100873222 /* ItemApiLibroTableViewCell.swift */; };
+		AF4EF7492B01B8A900873222 /* ApiAutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */; };
+		AF4EF74B2B01B8BC00873222 /* ApiEditorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */; };
+		AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */; };
 		C3794412775498E2D62A6ACA /* Pods_app_biblioteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C3391AAFC085C56B9998FD /* Pods_app_biblioteca.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +62,12 @@
 		AF4EF71F2B017C2E00873222 /* LibroApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibroApiViewController.swift; sourceTree = "<group>"; };
 		AF4EF7212B017DC400873222 /* ItemLibroCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLibroCollectionViewCell.swift; sourceTree = "<group>"; };
 		AF4EF7232B01833200873222 /* UserEdiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEdiViewController.swift; sourceTree = "<group>"; };
+		AF4EF7422B01B85200873222 /* ItemApiAutorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemApiAutorTableViewCell.swift; sourceTree = "<group>"; };
+		AF4EF7442B01B86E00873222 /* ItemApiEditorialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemApiEditorialTableViewCell.swift; sourceTree = "<group>"; };
+		AF4EF7462B01B88100873222 /* ItemApiLibroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemApiLibroTableViewCell.swift; sourceTree = "<group>"; };
+		AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAutorViewController.swift; sourceTree = "<group>"; };
+		AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEditorialViewController.swift; sourceTree = "<group>"; };
+		AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLibroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +152,9 @@
 		AF4EF7012B013B6E00873222 /* Api */ = {
 			isa = PBXGroup;
 			children = (
+				AF4EF7412B01B82800873222 /* ApiAutor */,
+				AF4EF7402B01B81D00873222 /* ApiEditorial */,
+				AF4EF73F2B01B7F200873222 /* ApiLibro */,
 			);
 			path = Api;
 			sourceTree = "<group>";
@@ -171,6 +186,33 @@
 				AF4EF7212B017DC400873222 /* ItemLibroCollectionViewCell.swift */,
 			);
 			path = LibroApi;
+			sourceTree = "<group>";
+		};
+		AF4EF73F2B01B7F200873222 /* ApiLibro */ = {
+			isa = PBXGroup;
+			children = (
+				AF4EF7462B01B88100873222 /* ItemApiLibroTableViewCell.swift */,
+				AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */,
+			);
+			path = ApiLibro;
+			sourceTree = "<group>";
+		};
+		AF4EF7402B01B81D00873222 /* ApiEditorial */ = {
+			isa = PBXGroup;
+			children = (
+				AF4EF7442B01B86E00873222 /* ItemApiEditorialTableViewCell.swift */,
+				AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */,
+			);
+			path = ApiEditorial;
+			sourceTree = "<group>";
+		};
+		AF4EF7412B01B82800873222 /* ApiAutor */ = {
+			isa = PBXGroup;
+			children = (
+				AF4EF7422B01B85200873222 /* ItemApiAutorTableViewCell.swift */,
+				AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */,
+			);
+			path = ApiAutor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,10 +333,15 @@
 				AF4EF7202B017C2E00873222 /* LibroApiViewController.swift in Sources */,
 				AF4EF7092B0142E600873222 /* Libro.swift in Sources */,
 				AF4EF70D2B0142FB00873222 /* Rol.swift in Sources */,
+				AF4EF7432B01B85200873222 /* ItemApiAutorTableViewCell.swift in Sources */,
+				AF4EF74B2B01B8BC00873222 /* ApiEditorialViewController.swift in Sources */,
 				AF4EF6EE2B013A2F00873222 /* ViewController.swift in Sources */,
+				AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */,
 				AF4EF71B2B015F6700873222 /* LoginController.swift in Sources */,
+				AF4EF7472B01B88100873222 /* ItemApiLibroTableViewCell.swift in Sources */,
 				AF4EF6F42B013A2F00873222 /* app_biblioteca.xcdatamodeld in Sources */,
 				AF4EF7072B0140BF00873222 /* UserMainViewController.swift in Sources */,
+				AF4EF7492B01B8A900873222 /* ApiAutorViewController.swift in Sources */,
 				AF4EF7192B015B9C00873222 /* UsuarioController.swift in Sources */,
 				AF4EF7112B01433000873222 /* Autor.swift in Sources */,
 				AF4EF71D2B01759700873222 /* UserRegViewController.swift in Sources */,
@@ -305,6 +352,7 @@
 				AF4EF7242B01833200873222 /* UserEdiViewController.swift in Sources */,
 				AF4EF7222B017DC400873222 /* ItemLibroCollectionViewCell.swift in Sources */,
 				AF4EF70B2B0142F000873222 /* Editorial.swift in Sources */,
+				AF4EF7452B01B86E00873222 /* ItemApiEditorialTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
