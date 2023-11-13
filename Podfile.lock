@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.8.1)
+  - DropDown (2.3.13)
+  - Kingfisher (7.10.0)
+  - Toaster (2.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - DropDown
+  - Kingfisher
+  - Toaster
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DropDown
+    - Kingfisher
+    - Toaster
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  Kingfisher: a18f05d3b6d37d8650ee4a3e61d57a28fc6207f6
+  Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
+
+PODFILE CHECKSUM: 852c53601d7aa9a875be27dfaec522cf19df96b7
+
+COCOAPODS: 1.13.0
