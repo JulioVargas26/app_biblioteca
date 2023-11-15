@@ -9,6 +9,10 @@ import UIKit
 
 class ItemApiAutorTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblNomAutor: UILabel!
+    @IBOutlet weak var lblFecNacAutor: UILabel!
+    @IBOutlet weak var lblNaciAutor: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,6 +9,10 @@ import UIKit
 
 class ItemApiLibroTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblTitLibro: UILabel!
+    @IBOutlet weak var lblAutLibro: UILabel!
+    @IBOutlet weak var lblAniLibro: UILabel!
+    @IBOutlet weak var lblEdiLibro: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

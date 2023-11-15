@@ -9,6 +9,10 @@ import UIKit
 
 class ItemApiEditorialTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblNomEditorial: UILabel!
+    @IBOutlet weak var lblDirEditorial: UILabel!
+    @IBOutlet weak var lblTelEditorial: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
