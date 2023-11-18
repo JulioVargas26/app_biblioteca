@@ -27,7 +27,7 @@ class UserEdiViewController: UIViewController {
     let dropDown = DropDown()
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+            super.viewDidLoad()
 
         // Do any additional setup after loading the view.
        // txtNomUser.placeholder = bean.nombre

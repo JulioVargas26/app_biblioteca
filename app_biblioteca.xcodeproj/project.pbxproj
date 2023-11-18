@@ -33,6 +33,8 @@
 		AF4EF7492B01B8A900873222 /* ApiAutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */; };
 		AF4EF74B2B01B8BC00873222 /* ApiEditorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */; };
 		AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */; };
+		AFAB26012B0912C90087A6EE /* UsuarioApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB26002B0912C90087A6EE /* UsuarioApi.swift */; };
+		AFAB26032B09138F0087A6EE /* RolApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB26022B09138F0087A6EE /* RolApi.swift */; };
 		C3794412775498E2D62A6ACA /* Pods_app_biblioteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C3391AAFC085C56B9998FD /* Pods_app_biblioteca.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAutorViewController.swift; sourceTree = "<group>"; };
 		AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEditorialViewController.swift; sourceTree = "<group>"; };
 		AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLibroViewController.swift; sourceTree = "<group>"; };
+		AFAB26002B0912C90087A6EE /* UsuarioApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioApi.swift; sourceTree = "<group>"; };
+		AFAB26022B09138F0087A6EE /* RolApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 				AF4EF70C2B0142FB00873222 /* Rol.swift */,
 				AF4EF70E2B01430C00873222 /* Usuario.swift */,
 				AF4EF7102B01433000873222 /* Autor.swift */,
+				AFAB26002B0912C90087A6EE /* UsuarioApi.swift */,
+				AFAB26022B09138F0087A6EE /* RolApi.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -342,6 +348,7 @@
 				AF4EF6F42B013A2F00873222 /* app_biblioteca.xcdatamodeld in Sources */,
 				AF4EF7072B0140BF00873222 /* UserMainViewController.swift in Sources */,
 				AF4EF7492B01B8A900873222 /* ApiAutorViewController.swift in Sources */,
+				AFAB26032B09138F0087A6EE /* RolApi.swift in Sources */,
 				AF4EF7192B015B9C00873222 /* UsuarioController.swift in Sources */,
 				AF4EF7112B01433000873222 /* Autor.swift in Sources */,
 				AF4EF71D2B01759700873222 /* UserRegViewController.swift in Sources */,
@@ -351,6 +358,7 @@
 				AF4EF70F2B01430C00873222 /* Usuario.swift in Sources */,
 				AF4EF7242B01833200873222 /* UserEdiViewController.swift in Sources */,
 				AF4EF7222B017DC400873222 /* ItemLibroCollectionViewCell.swift in Sources */,
+				AFAB26012B0912C90087A6EE /* UsuarioApi.swift in Sources */,
 				AF4EF70B2B0142F000873222 /* Editorial.swift in Sources */,
 				AF4EF7452B01B86E00873222 /* ItemApiEditorialTableViewCell.swift in Sources */,
 			);
