@@ -124,11 +124,11 @@
 		AF4EF6E82B013A2F00873222 /* app_biblioteca */ = {
 			isa = PBXGroup;
 			children = (
+				AFDCA4732B0ADFC60071218A /* Entity */,
 				AF4EF71E2B017BF400873222 /* LibroApi */,
 				AF4EF7032B013BB700873222 /* View */,
 				AF4EF7022B013BAD00873222 /* Controller */,
 				AF4EF7012B013B6E00873222 /* Api */,
-				AF4EF7002B013B5900873222 /* Entity */,
 				AF4EF6E92B013A2F00873222 /* AppDelegate.swift */,
 				AF4EF6EB2B013A2F00873222 /* SceneDelegate.swift */,
 				AF4EF6ED2B013A2F00873222 /* ViewController.swift */,
@@ -139,20 +139,6 @@
 				AF4EF6F22B013A2F00873222 /* app_biblioteca.xcdatamodeld */,
 			);
 			path = app_biblioteca;
-			sourceTree = "<group>";
-		};
-		AF4EF7002B013B5900873222 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				AF4EF7082B0142E600873222 /* Libro.swift */,
-				AF4EF70A2B0142F000873222 /* Editorial.swift */,
-				AF4EF70C2B0142FB00873222 /* Rol.swift */,
-				AF4EF70E2B01430C00873222 /* Usuario.swift */,
-				AF4EF7102B01433000873222 /* Autor.swift */,
-				AFAB26002B0912C90087A6EE /* UsuarioApi.swift */,
-				AFAB26022B09138F0087A6EE /* RolApi.swift */,
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		AF4EF7012B013B6E00873222 /* Api */ = {
@@ -188,8 +174,8 @@
 		AF4EF71E2B017BF400873222 /* LibroApi */ = {
 			isa = PBXGroup;
 			children = (
-				AF4EF71F2B017C2E00873222 /* LibroApiViewController.swift */,
 				AF4EF7212B017DC400873222 /* ItemLibroCollectionViewCell.swift */,
+				AF4EF71F2B017C2E00873222 /* LibroApiViewController.swift */,
 			);
 			path = LibroApi;
 			sourceTree = "<group>";
@@ -219,6 +205,21 @@
 				AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */,
 			);
 			path = ApiAutor;
+			sourceTree = "<group>";
+		};
+		AFDCA4732B0ADFC60071218A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AFAB26002B0912C90087A6EE /* UsuarioApi.swift */,
+				AFAB26022B09138F0087A6EE /* RolApi.swift */,
+				AF4EF7102B01433000873222 /* Autor.swift */,
+				AF4EF70A2B0142F000873222 /* Editorial.swift */,
+				AF4EF7082B0142E600873222 /* Libro.swift */,
+				AF4EF70C2B0142FB00873222 /* Rol.swift */,
+				AF4EF70E2B01430C00873222 /* Usuario.swift */,
+			);
+			name = Entity;
+			path = "New Group/Entity";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

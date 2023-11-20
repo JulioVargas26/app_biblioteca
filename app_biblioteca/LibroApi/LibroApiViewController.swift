@@ -27,6 +27,7 @@ class LibroApiViewController: UIViewController,
         cvLibros.dataSource=self
         cvLibros.delegate=self
         cargarProductos()
+        print(listaLibro.count)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,6 +51,8 @@ class LibroApiViewController: UIViewController,
             AF.request("https://api-biblioteca-nl19.onrender.com/api/libro").responseDecodable(of: [Libro].self){
                 
                 response in guard let data=response.value else{return}
+                debugPrint("Response: \(response)")
+                print("Response DecodableType: \(response.value)")
                 self.listaLibro=data
                 
                 self.cvLibros.reloadData()
@@ -58,7 +61,7 @@ class LibroApiViewController: UIViewController,
         
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             let width=(collectionView.frame.width-10)/2
-            
+                        
             return CGSize(width: width, height: 300)
         }
         

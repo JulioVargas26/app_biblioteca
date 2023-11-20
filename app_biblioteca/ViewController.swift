@@ -23,24 +23,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnLogin(_ sender: UIButton) {
-        
-        let urlString=""
-        guard let login = txtUsername.text,
-              let password = txtContrasenia.text
-        else{
-            return
-            }
-        
-        
-        let parametros = ["username":login,"contrasenia":password]
-        AF.request(urlString,method: .post,parameters: parametros).responseDecodable(of: [UsuarioApi].self){
-            
-            response in guard let data=response.value else{return}
-            print(data)
-        }
-        
-        
-       /* if let login = txtUsername.text,
+      
+       if let login = txtUsername.text,
             let password = txtContrasenia.text {
             let resultado = LoginController().IniciarSesion(username: login, contrasenia: password)
 
@@ -62,7 +46,7 @@ class ViewController: UIViewController {
                 } else {
                     Toast(text: "Inicio de sesión fallido").show()
                 }
-            }*/
+            }
         
     }
     

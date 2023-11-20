@@ -9,8 +9,8 @@ import UIKit
 
 struct Autor:Codable
 {
-    var id:Int
-    var nombre:String
-    var fecha_nacimiento:Date
-    var nacionalidad:String
+    var id: Int
+    var nombre: String
+    var fecha_nacimiento: String
+    var nacionalidad: String
 }
