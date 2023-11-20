@@ -27,7 +27,7 @@ class ApiEditorialViewController: UIViewController ,UITableViewDataSource,UITabl
         
         tvEditorial.delegate=self
         tvEditorial.dataSource=self
-        tvEditorial.rowHeight=120
+        tvEditorial.rowHeight=150
         cargarEditorial()
     }
     
@@ -37,6 +37,9 @@ class ApiEditorialViewController: UIViewController ,UITableViewDataSource,UITabl
         AF.request("https://api-biblioteca-nl19.onrender.com/api/editorial").responseDecodable(of: [Editorial].self){
             
             response in guard let data=response.value else{return}
+            
+            debugPrint("Response: \(response)")
+            
             self.listaEditorial=data
             self.tvEditorial.reloadData()
         }
@@ -48,7 +51,7 @@ class ApiEditorialViewController: UIViewController ,UITableViewDataSource,UITabl
     }
         
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row=tvEditorial.dequeueReusableCell(withIdentifier: "itemEditorial")
+        let row=tvEditorial.dequeueReusableCell(withIdentifier: "ItemEditorialApi")
                 as! ItemApiEditorialTableViewCell
             //imprimir datos
             row.lblNomEditorial.text=listaEditorial[indexPath.row].nombre

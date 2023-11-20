@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052.6717557251909" y="-58.450704225352112"/>
+            <point key="canvasLocation" x="1979.3893129770991" y="-58.450704225352112"/>
         </scene>
         <!--registro usuario -->
         <scene sceneID="wm4-OG-1R2">
@@ -195,7 +195,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="153" id="ijE-xW-ZD2">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemUsuarioApi" rowHeight="153" id="ijE-xW-ZD2">
                                         <rect key="frame" x="0.0" y="50" width="361" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ijE-xW-ZD2" id="fJU-7y-N0k">
@@ -374,7 +374,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemLibro" rowHeight="190" id="Brr-d8-VmI" customClass="ItemApiLibroTableViewCell" customModule="app_biblioteca" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemLibroApi" rowHeight="190" id="Brr-d8-VmI" customClass="ItemApiLibroTableViewCell" customModule="app_biblioteca" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="361" height="190"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Brr-d8-VmI" id="JEI-Pb-igX">
@@ -508,7 +508,7 @@
                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="8US-f6-2m6" kind="show" id="qkM-hE-qIf"/>
+                                    <segue destination="8US-f6-2m6" kind="show" identifier="regAutorApi" id="qkM-hE-qIf"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wVd-fq-7LV">
@@ -516,7 +516,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemAutor" rowHeight="153" id="TCg-tt-3zf" customClass="ItemApiAutorTableViewCell" customModule="app_biblioteca" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemAutorApi" rowHeight="153" id="TCg-tt-3zf" customClass="ItemApiAutorTableViewCell" customModule="app_biblioteca" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="361" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TCg-tt-3zf" id="GVl-YO-5kq">
@@ -583,7 +583,7 @@
                     <connections>
                         <outlet property="tvAutor" destination="wVd-fq-7LV" id="LAa-zP-wcz"/>
                         <outlet property="txtFiltrarAutor" destination="NZP-mJ-j0J" id="zPp-dF-7Aj"/>
-                        <segue destination="fUC-ya-RlS" kind="show" id="R3N-yX-zF7"/>
+                        <segue destination="fUC-ya-RlS" kind="show" identifier="editarAutorApi" id="R3N-yX-zF7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h08-ZP-10y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -655,7 +655,7 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="SQ1-kr-ElU" kind="show" id="Pa2-5P-STO"/>
+                                    <segue destination="SQ1-kr-ElU" kind="show" identifier="ListAutor" id="Pa2-5P-STO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mantenimiento Autor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ik-c8-cLV">
@@ -693,7 +693,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nyu-yW-kue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="-192"/>
+            <point key="canvasLocation" x="2814.5038167938928" y="-192.25352112676057"/>
         </scene>
         <!--lista editorial-->
         <scene sceneID="Vfs-7C-VUt">
@@ -745,7 +745,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemEditorial" rowHeight="153" id="jRb-pK-J3C" customClass="ItemApiEditorialTableViewCell" customModule="app_biblioteca" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemEditorialApi" rowHeight="153" id="jRb-pK-J3C" customClass="ItemApiEditorialTableViewCell" customModule="app_biblioteca" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="361" height="153"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jRb-pK-J3C" id="yqu-MN-dEP">
@@ -833,7 +833,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXC-SX-mei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5426" y="-657"/>
+            <point key="canvasLocation" x="6351.9083969465646" y="-657.04225352112678"/>
         </scene>
         <!--actualizar datos-->
         <scene sceneID="EWT-3w-LdG">
@@ -1074,26 +1074,26 @@
                                 <rect key="frame" x="16" y="240" width="361" height="578"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zl4-d2-18c">
-                                    <size key="itemSize" width="177" height="160"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kPh-vY-jkw">
+                                    <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="row" id="oUE-IG-Glc" customClass="ItemLibroCollectionViewCell" customModule="app_biblioteca" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="175" height="160"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dp9-on-fVG">
-                                            <rect key="frame" x="0.0" y="0.0" width="175" height="160"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="161" height="160"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4OD-rx-5MH">
-                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="114"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4OD-rx-5MH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="161" height="114"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwt-6t-EHR">
-                                                    <rect key="frame" x="0.0" y="116" width="175" height="44"/>
+                                                    <rect key="frame" x="0.0" y="116" width="161" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -1101,7 +1101,7 @@
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="175" height="160"/>
+                                        <size key="customSize" width="161" height="160"/>
                                         <connections>
                                             <outlet property="imgFoto" destination="4OD-rx-5MH" id="IFd-8E-lIQ"/>
                                             <outlet property="lblTitle" destination="Kwt-6t-EHR" id="qg4-FL-Sab"/>
@@ -1581,10 +1581,11 @@
             </objects>
             <point key="canvasLocation" x="1008" y="712"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="anJ-wk-Tm4">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mvj-7d-6aq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TFJ-dO-at1"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ueZ-U2-Cee">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -1597,11 +1598,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Oc-q8-EU9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1057.2519083969464" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="QSa-Mw-SJl"/>
+        <segue reference="GYZ-9Z-ClU"/>
         <segue reference="bjs-d6-xcu"/>
     </inferredMetricsTieBreakers>
     <resources>

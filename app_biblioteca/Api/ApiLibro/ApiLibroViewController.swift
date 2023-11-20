@@ -27,7 +27,7 @@ class ApiLibroViewController: UIViewController,UITableViewDataSource,UITableView
         
         tvLibro.delegate=self
         tvLibro.dataSource=self
-        tvLibro.rowHeight=120
+        tvLibro.rowHeight=200
         cargarLibro()
     }
     
@@ -37,6 +37,9 @@ class ApiLibroViewController: UIViewController,UITableViewDataSource,UITableView
         AF.request("https://api-biblioteca-nl19.onrender.com/api/libro").responseDecodable(of: [Libro].self){
             
             response in guard let data=response.value else{return}
+            
+            debugPrint("Response: \(response)")
+            
             self.listaLibro=data
             self.tvLibro.reloadData()
         }
@@ -48,12 +51,12 @@ class ApiLibroViewController: UIViewController,UITableViewDataSource,UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row=tvLibro.dequeueReusableCell(withIdentifier: "itemLibro")
+        let row=tvLibro.dequeueReusableCell(withIdentifier: "ItemLibroApi")
                 as! ItemApiLibroTableViewCell
             //imprimir datos
             row.lblTitLibro.text=listaLibro[indexPath.row].titulo
         row.lblAutLibro.text=listaLibro[indexPath.row].autor.nombre
-        row.lblAniLibro.text=listaLibro[indexPath.row].anio_publicacion
+        row.lblAniLibro.text=String(listaLibro[indexPath.row].anio_publicacion)
         row.lblEdiLibro.text=listaLibro[indexPath.row].editorial.nombre
             return row
     }

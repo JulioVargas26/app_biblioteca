@@ -7,9 +7,10 @@
 
 import UIKit
 
-struct Editorial:Codable {
+struct Editorial:Codable
+{
     var id:Int
     var nombre:String
     var direccion:String
-    var telefono:Int
+    var telefono:String
 }

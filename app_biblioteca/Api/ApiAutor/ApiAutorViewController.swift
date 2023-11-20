@@ -11,8 +11,6 @@ import Kingfisher
 
 class ApiAutorViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
    
-    
-
     @IBOutlet weak var txtFiltrarAutor: UITextField!
     @IBOutlet weak var tvAutor: UITableView!
     
@@ -27,7 +25,7 @@ class ApiAutorViewController: UIViewController,UITableViewDataSource,UITableView
         
         tvAutor.delegate=self
         tvAutor.dataSource=self
-        tvAutor.rowHeight=120
+        tvAutor.rowHeight=150
         cargarAutor()
     }
     
@@ -37,6 +35,9 @@ class ApiAutorViewController: UIViewController,UITableViewDataSource,UITableView
         AF.request("https://api-biblioteca-nl19.onrender.com/api/autor").responseDecodable(of: [Autor].self){
             
             response in guard let data=response.value else{return}
+            
+            debugPrint("Response: \(response)")
+            
             self.listaAutor=data
             self.tvAutor.reloadData()
         }
@@ -48,22 +49,25 @@ class ApiAutorViewController: UIViewController,UITableViewDataSource,UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let row=tvAutor.dequeueReusableCell(withIdentifier: "itemAutor")
+        let row=tvAutor.dequeueReusableCell(withIdentifier: "ItemAutorApi")
                 as! ItemApiAutorTableViewCell
             //imprimir datos
             row.lblNomAutor.text=listaAutor[indexPath.row].nombre
-        
-        
-        /*let today = Date.now
-        let formatter1 = DateFormatter()
-        formatter1.dateStyle = .short
-        print(formatter1.string(from: today))
-        */
-        
-        row.lblFecNacAutor.text=DateFormatter().string(from:listaAutor[indexPath.row].fecha_nacimiento)
+            row.lblFecNacAutor.text=listaAutor[indexPath.row].fecha_nacimiento
             row.lblNaciAutor.text=listaAutor[indexPath.row].nacionalidad
             return row
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           
+           if segue.identifier=="editarAutorApi"{
+               //crear objeto de la clase EditarViewController
+               //let autor=segue.destination as! ApiAutorViewController
+               //acceder
+               //autor.bean=listaEmpleado[pos]
+           }
+           
+       }
     
     @IBAction func btnBuscarAutor(_ sender: UIButton) {
     }

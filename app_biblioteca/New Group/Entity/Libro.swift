@@ -7,10 +7,11 @@
 
 import UIKit
 
-struct Libro:Codable{
+struct Libro:Codable
+{
     var id:Int
     var titulo:String
     var autor:Autor
-    var anio_publicacion:String
+    var anio_publicacion:Double
     var editorial:Editorial
 }
