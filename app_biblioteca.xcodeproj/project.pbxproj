@@ -35,6 +35,8 @@
 		AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */; };
 		AFAB26012B0912C90087A6EE /* UsuarioApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB26002B0912C90087A6EE /* UsuarioApi.swift */; };
 		AFAB26032B09138F0087A6EE /* RolApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB26022B09138F0087A6EE /* RolApi.swift */; };
+		AFC602502B0C247E0034C4E9 /* DetalleLibroApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */; };
+		AFC602522B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */; };
 		C3794412775498E2D62A6ACA /* Pods_app_biblioteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C3391AAFC085C56B9998FD /* Pods_app_biblioteca.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLibroViewController.swift; sourceTree = "<group>"; };
 		AFAB26002B0912C90087A6EE /* UsuarioApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioApi.swift; sourceTree = "<group>"; };
 		AFAB26022B09138F0087A6EE /* RolApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolApi.swift; sourceTree = "<group>"; };
+		AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleLibroApiViewController.swift; sourceTree = "<group>"; };
+		AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestamoLibroApiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 			children = (
 				AF4EF7212B017DC400873222 /* ItemLibroCollectionViewCell.swift */,
 				AF4EF71F2B017C2E00873222 /* LibroApiViewController.swift */,
+				AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */,
+				AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */,
 			);
 			path = LibroApi;
 			sourceTree = "<group>";
@@ -349,8 +355,10 @@
 				AF4EF6F42B013A2F00873222 /* app_biblioteca.xcdatamodeld in Sources */,
 				AF4EF7072B0140BF00873222 /* UserMainViewController.swift in Sources */,
 				AF4EF7492B01B8A900873222 /* ApiAutorViewController.swift in Sources */,
+				AFC602502B0C247E0034C4E9 /* DetalleLibroApiViewController.swift in Sources */,
 				AFAB26032B09138F0087A6EE /* RolApi.swift in Sources */,
 				AF4EF7192B015B9C00873222 /* UsuarioController.swift in Sources */,
+				AFC602522B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift in Sources */,
 				AF4EF7112B01433000873222 /* Autor.swift in Sources */,
 				AF4EF71D2B01759700873222 /* UserRegViewController.swift in Sources */,
 				AF4EF7052B0140B000873222 /* AdminMainViewController.swift in Sources */,

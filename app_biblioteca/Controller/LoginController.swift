@@ -11,6 +11,10 @@ import Toaster
 
 class LoginController: NSObject {
     
+    
+    let defaults = UserDefaults.standard
+    
+    
     func IniciarSesion(username: String, contrasenia: String) -> (success: Bool, rol: String?) {
         let delegate = UIApplication.shared.delegate as? AppDelegate
         guard let bd = delegate?.persistentContainer.viewContext else {
@@ -18,25 +22,43 @@ class LoginController: NSObject {
             return (false, nil)
         }
         
+        print("bd " , bd)
+        
+        
         let fetchRequest = NSFetchRequest<UsuarioEntity>(entityName: "UsuarioEntity")
+        
+        print("entity ",fetchRequest)
         
         let condicion1 = NSPredicate(format: "username == %@", username)
         let condicion2 = NSPredicate(format: "contrasenia == %@", contrasenia)
         
         let unir = NSCompoundPredicate(andPredicateWithSubpredicates: [condicion1, condicion2])
+        print("unir ",unir)
         
         fetchRequest.predicate = unir
+       
+        
+        print("entity 2",fetchRequest)
         
         do {
             let resultado = try bd.fetch(fetchRequest)
             
+            print("resulLogin " , resultado)
             guard let usuario = resultado.first else {
                 // No se encontró un usuario con las credenciales proporcionadas
                 return (false, nil)
             }
+            print("guard ",usuario)
             
+            let datosSesion = ["sesionId": String(usuario.id),"sesionNombre":usuario.nombre]
+            defaults.set(datosSesion, forKey:"IDUSER")
+            
+            print("IDUSER" , defaults)
+            print("sesionId" , datosSesion)
             // Aquí puedes agregar la condición basada en el rol del usuario
             if let rol = usuario.rol {
+                print("rol Login inicio ",rol)
+                
                 if rol == "administrador" {
                     return (true, "administrador")
                 } else if rol == "usuario" {
@@ -45,6 +67,7 @@ class LoginController: NSObject {
                     // Puedes manejar otros roles aquí si es necesario
                     return (false, nil)
                 }
+               
             } else {
                 print("Error: El rol del usuario es nil")
                 return (false, nil)

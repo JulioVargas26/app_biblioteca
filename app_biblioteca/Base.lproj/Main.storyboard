@@ -690,6 +690,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="e5H-BP-2ro"/>
+                    <connections>
+                        <outlet property="lblTitMainAdmin" destination="KbA-OK-8DS" id="Qpe-il-cxf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nyu-yW-kue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1105,7 +1108,6 @@
                                         <connections>
                                             <outlet property="imgFoto" destination="4OD-rx-5MH" id="IFd-8E-lIQ"/>
                                             <outlet property="lblTitle" destination="Kwt-6t-EHR" id="qg4-FL-Sab"/>
-                                            <segue destination="Vzh-xc-6Wc" kind="show" id="kDI-hg-Jjq"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -1134,6 +1136,7 @@
                     <connections>
                         <outlet property="cvLibros" destination="MgS-Ka-17e" id="FRG-AX-iZH"/>
                         <outlet property="txtFiltro" destination="lLj-Vz-Uzx" id="B9o-gc-S5w"/>
+                        <segue destination="Vzh-xc-6Wc" kind="show" identifier="DetLibApi" id="vX2-xQ-8Hg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsW-Pf-heZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1143,12 +1146,12 @@
         <!--detalle libro-->
         <scene sceneID="LE6-gd-e5g">
             <objects>
-                <viewController title="detalle libro" id="Vzh-xc-6Wc" sceneMemberID="viewController">
+                <viewController title="detalle libro" id="Vzh-xc-6Wc" customClass="DetalleLibroApiViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PNb-D8-Jy4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listados de Libros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxh-iT-Sj5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulos de Libros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxh-iT-Sj5">
                                 <rect key="frame" x="16" y="103" width="361" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
@@ -1184,20 +1187,48 @@
                                 <rect key="frame" x="43" y="546" width="306" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Prestamo Libro"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Prestrarse Libro"/>
                                 <connections>
-                                    <segue destination="3gd-x5-138" kind="show" id="eG2-0P-ATl"/>
+                                    <segue destination="3gd-x5-138" kind="show" identifier="PresLibApi" id="eG2-0P-ATl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VE3-iE-o60">
+                                <rect key="frame" x="149" y="383" width="228" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIr-hb-wuJ">
+                                <rect key="frame" x="149" y="430" width="228" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltN-yj-Phh">
+                                <rect key="frame" x="149" y="477" width="228" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cG8-ah-Bjb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="nkN-th-Hxf"/>
+                    <connections>
+                        <outlet property="imgLibroApi" destination="Ymp-c8-qrr" id="n3Z-iJ-OsV"/>
+                        <outlet property="lblAnioApi" destination="ltN-yj-Phh" id="zPJ-dO-Tyf"/>
+                        <outlet property="lblAutorApi" destination="VE3-iE-o60" id="GkU-kl-8AR"/>
+                        <outlet property="lblDetTituloApi" destination="zxh-iT-Sj5" id="GTm-HF-dJb"/>
+                        <outlet property="lblEditorialApi" destination="CIr-hb-wuJ" id="BYC-yV-3AN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dMU-aZ-WuT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3453" y="692"/>
+            <point key="canvasLocation" x="3452.6717557251909" y="691.54929577464793"/>
         </scene>
         <!--listado prestamo-->
         <scene sceneID="Nd8-6I-4yh">
@@ -1295,7 +1326,7 @@
         <!--prestamo libro-->
         <scene sceneID="xr6-cD-erQ">
             <objects>
-                <viewController title="prestamo libro" id="3gd-x5-138" sceneMemberID="viewController">
+                <viewController title="prestamo libro" id="3gd-x5-138" customClass="PrestamoLibroApiViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKe-q5-WfO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1366,6 +1397,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1lp-Cz-hHE"/>
+                    <connections>
+                        <outlet property="txtFecPrestamo" destination="15C-q4-gWk" id="M1L-P8-3xF"/>
+                        <outlet property="txtIdUser" destination="VCa-dN-gL3" id="tN1-fI-fdy"/>
+                        <outlet property="txtTitLibroApi" destination="BkV-1x-BGd" id="ajB-fO-inT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XMT-cS-SdJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

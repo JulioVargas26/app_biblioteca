@@ -18,7 +18,7 @@ class LibroApiViewController: UIViewController,
     @IBOutlet weak var cvLibros: UICollectionView!
     
     var listaLibro:[Libro]=[]
-    
+    var pos = -1
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +30,19 @@ class LibroApiViewController: UIViewController,
         print(listaLibro.count)
     }
     
+   
+    func cargarProductos(){
+            //conexion a la url del api
+            AF.request("https://api-biblioteca-nl19.onrender.com/api/libro").responseDecodable(of: [Libro].self){
+                
+                response in guard let data=response.value else{return}
+                debugPrint("Response: \(response)")
+                print("Response DecodableType: \(response.value)")
+                self.listaLibro=data
+                
+                self.cvLibros.reloadData()
+            }
+        }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return listaLibro.count
     }
@@ -46,19 +59,6 @@ class LibroApiViewController: UIViewController,
                 return fila
     }
     
-    func cargarProductos(){
-            //conexion a la url del api
-            AF.request("https://api-biblioteca-nl19.onrender.com/api/libro").responseDecodable(of: [Libro].self){
-                
-                response in guard let data=response.value else{return}
-                debugPrint("Response: \(response)")
-                print("Response DecodableType: \(response.value)")
-                self.listaLibro=data
-                
-                self.cvLibros.reloadData()
-            }
-        }
-        
         func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
             let width=(collectionView.frame.width-10)/2
                         
@@ -66,9 +66,27 @@ class LibroApiViewController: UIViewController,
         }
         
         func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            let cod=listaLibro[indexPath.row].id
-            
-            print("id : ",cod)
+           // let cod=listaLibro[indexPath.row].id
+            pos=indexPath.row
+                // print("id : ",cod)
+            performSegue(withIdentifier: "DetLibApi", sender: self)
         }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            if segue.identifier=="DetLibApi"{
+                //crear objeto de la clase EditarViewController
+                let detLib=segue.destination as! DetalleLibroApiViewController
+                
+                //acceder
+                detLib.data=listaLibro[pos]
+                
+                
+                print(detLib.data)
+            }
+            
+        }
+    
+    
+    
 }
