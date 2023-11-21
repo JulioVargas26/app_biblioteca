@@ -17,8 +17,10 @@ class UserMainViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-      
-        lblTitMainUser.text="Biblioteca - "
+        let sesionMenu = defaults.object(forKey: "IDUSER") as! [String:String]
+        let sesionNombre = sesionMenu["sesionNombre"]
+        
+        lblTitMainUser.text="Biblioteca - "+sesionNombre!
        
     }
     

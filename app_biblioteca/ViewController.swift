@@ -27,7 +27,7 @@ class ViewController: UIViewController {
        if let login = txtUsername.text,
             let password = txtContrasenia.text {
             let resultado = LoginController().IniciarSesion(username: login, contrasenia: password)
-
+print("login ",resultado)
                 if resultado.success {
                     Toast(text: "Inicio de sesión exitoso").show()
 
@@ -40,6 +40,8 @@ class ViewController: UIViewController {
                         } else {
                             // Manejar otros roles si es necesario
                         }
+                        
+                        print("rol " , rol)
                     } else {
                         // Manejar el caso donde el rol es nil
                     }
