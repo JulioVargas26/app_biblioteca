@@ -18,9 +18,9 @@ class AdminMainViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         let sesionMenu = defaults.object(forKey: "IDUSER") as! [String:String]
-        let sesionNombre = sesionMenu["sesionNombre"]
+        let sesionNombre = sesionMenu["sesionNOM"]
         
-        lblTitMainAdmin.text="Biblioteca - "+sesionNombre!
+        lblTitMainAdmin.text = "Biblioteca - " + sesionNombre!
     }
     
 }

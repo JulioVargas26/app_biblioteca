@@ -11,6 +11,8 @@ pod 'Alamofire'
 pod 'Kingfisher'
 pod 'DropDown'
 pod 'Toaster'
+pod 'Firebase/Firestore'
+pod 'FacebookLogin'
 
 
 end

@@ -33,6 +33,10 @@
 		AF4EF7492B01B8A900873222 /* ApiAutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */; };
 		AF4EF74B2B01B8BC00873222 /* ApiEditorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */; };
 		AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */; };
+		AF6E5B4C2B1197090031FE6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6E5B4B2B1197090031FE6D /* GoogleService-Info.plist */; };
+		AF9B98642B16E98800B26E35 /* prestamo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98632B16E98800B26E35 /* prestamo.swift */; };
+		AF9B98662B16EEC600B26E35 /* ListadoPrestamoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98652B16EEC600B26E35 /* ListadoPrestamoViewController.swift */; };
+		AF9B98682B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */; };
 		AFAB26012B0912C90087A6EE /* UsuarioApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB26002B0912C90087A6EE /* UsuarioApi.swift */; };
 		AFAB26032B09138F0087A6EE /* RolApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB26022B09138F0087A6EE /* RolApi.swift */; };
 		AFC602502B0C247E0034C4E9 /* DetalleLibroApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */; };
@@ -72,6 +76,10 @@
 		AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAutorViewController.swift; sourceTree = "<group>"; };
 		AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEditorialViewController.swift; sourceTree = "<group>"; };
 		AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLibroViewController.swift; sourceTree = "<group>"; };
+		AF6E5B4B2B1197090031FE6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF9B98632B16E98800B26E35 /* prestamo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prestamo.swift; sourceTree = "<group>"; };
+		AF9B98652B16EEC600B26E35 /* ListadoPrestamoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoPrestamoViewController.swift; sourceTree = "<group>"; };
+		AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListadoPrestamoTableViewCell.swift; sourceTree = "<group>"; };
 		AFAB26002B0912C90087A6EE /* UsuarioApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioApi.swift; sourceTree = "<group>"; };
 		AFAB26022B09138F0087A6EE /* RolApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolApi.swift; sourceTree = "<group>"; };
 		AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleLibroApiViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +136,7 @@
 		AF4EF6E82B013A2F00873222 /* app_biblioteca */ = {
 			isa = PBXGroup;
 			children = (
+				AF9B98692B16EF0300B26E35 /* Prestamo */,
 				AFDCA4732B0ADFC60071218A /* Entity */,
 				AF4EF71E2B017BF400873222 /* LibroApi */,
 				AF4EF7032B013BB700873222 /* View */,
@@ -140,6 +149,7 @@
 				AF4EF6F52B013A3100873222 /* Assets.xcassets */,
 				AF4EF6F72B013A3100873222 /* LaunchScreen.storyboard */,
 				AF4EF6FA2B013A3100873222 /* Info.plist */,
+				AF6E5B4B2B1197090031FE6D /* GoogleService-Info.plist */,
 				AF4EF6F22B013A2F00873222 /* app_biblioteca.xcdatamodeld */,
 			);
 			path = app_biblioteca;
@@ -181,7 +191,6 @@
 				AF4EF7212B017DC400873222 /* ItemLibroCollectionViewCell.swift */,
 				AF4EF71F2B017C2E00873222 /* LibroApiViewController.swift */,
 				AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */,
-				AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */,
 			);
 			path = LibroApi;
 			sourceTree = "<group>";
@@ -213,6 +222,16 @@
 			path = ApiAutor;
 			sourceTree = "<group>";
 		};
+		AF9B98692B16EF0300B26E35 /* Prestamo */ = {
+			isa = PBXGroup;
+			children = (
+				AF9B98652B16EEC600B26E35 /* ListadoPrestamoViewController.swift */,
+				AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */,
+				AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */,
+			);
+			path = Prestamo;
+			sourceTree = "<group>";
+		};
 		AFDCA4732B0ADFC60071218A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +242,7 @@
 				AF4EF7082B0142E600873222 /* Libro.swift */,
 				AF4EF70C2B0142FB00873222 /* Rol.swift */,
 				AF4EF70E2B01430C00873222 /* Usuario.swift */,
+				AF9B98632B16E98800B26E35 /* prestamo.swift */,
 			);
 			name = Entity;
 			path = "New Group/Entity";
@@ -289,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4EF6F92B013A3100873222 /* LaunchScreen.storyboard in Resources */,
+				AF6E5B4C2B1197090031FE6D /* GoogleService-Info.plist in Resources */,
 				AF4EF6F62B013A3100873222 /* Assets.xcassets in Resources */,
 				AF4EF6F12B013A2F00873222 /* Main.storyboard in Resources */,
 			);
@@ -350,9 +371,12 @@
 				AF4EF74B2B01B8BC00873222 /* ApiEditorialViewController.swift in Sources */,
 				AF4EF6EE2B013A2F00873222 /* ViewController.swift in Sources */,
 				AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */,
+				AF9B98662B16EEC600B26E35 /* ListadoPrestamoViewController.swift in Sources */,
 				AF4EF71B2B015F6700873222 /* LoginController.swift in Sources */,
+				AF9B98642B16E98800B26E35 /* prestamo.swift in Sources */,
 				AF4EF7472B01B88100873222 /* ItemApiLibroTableViewCell.swift in Sources */,
 				AF4EF6F42B013A2F00873222 /* app_biblioteca.xcdatamodeld in Sources */,
+				AF9B98682B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift in Sources */,
 				AF4EF7072B0140BF00873222 /* UserMainViewController.swift in Sources */,
 				AF4EF7492B01B8A900873222 /* ApiAutorViewController.swift in Sources */,
 				AFC602502B0C247E0034C4E9 /* DetalleLibroApiViewController.swift in Sources */,

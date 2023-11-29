@@ -82,7 +82,7 @@ class LibroApiViewController: UIViewController,
                 detLib.data=listaLibro[pos]
                 
                 
-                print(detLib.data)
+                print(detLib.data as Any)
             }
             
         }

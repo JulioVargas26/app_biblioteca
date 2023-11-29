@@ -50,11 +50,21 @@ class LoginController: NSObject {
             }
             print("guard ",usuario)
             
-            let datosSesion = ["sesionId": String(usuario.id),"sesionNombre":usuario.nombre]
+            let datosSesion = ["sesionID": String(usuario.id),
+                               "sesionNOM":usuario.nombre!,
+                               "sesionDIR":usuario.direccion!,
+                               "sesionCOR":usuario.correo!,
+                               "sesionTEL":String(usuario.telefono),
+                               "sesionUSER":usuario.username!,
+                               "sesionCONTRA":usuario.contrasenia!] as [String : Any]
+            
+            
             defaults.set(datosSesion, forKey:"IDUSER")
             
             print("IDUSER" , defaults)
-            print("sesionId" , datosSesion)
+            print("sesionDATA" , datosSesion)
+            
+            
             // Aquí puedes agregar la condición basada en el rol del usuario
             if let rol = usuario.rol {
                 print("rol Login inicio ",rol)
