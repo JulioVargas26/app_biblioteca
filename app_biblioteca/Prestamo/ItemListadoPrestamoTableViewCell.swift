@@ -10,7 +10,6 @@ import UIKit
 class ItemListadoPrestamoTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblTitLibroPres: UILabel!
-    @IBOutlet weak var lblUsuLibroPres: UILabel!
     @IBOutlet weak var lblFecDLibroPres: UILabel!
     
     override func awakeFromNib() {

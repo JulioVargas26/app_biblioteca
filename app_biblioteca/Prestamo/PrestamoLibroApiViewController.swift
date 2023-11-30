@@ -18,6 +18,8 @@ class PrestamoLibroApiViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     
+    
+    
     var datPresLibApi:String = ""
     
     override func viewDidLoad() {
@@ -27,6 +29,9 @@ class PrestamoLibroApiViewController: UIViewController {
         
         let sesionMenu = defaults.object(forKey: "IDUSER") as! [String:String]
         let sesionNombre = sesionMenu["sesionNOM"]
+        
+        //let dateFormatter = DateFormatter()
+        //    dateFormatter.dateFormat = "yyyy-MM-dd"
         
         txtIdUser.text=sesionNombre
         txtTitLibroApi.text=datPresLibApi

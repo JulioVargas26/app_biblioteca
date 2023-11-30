@@ -34,6 +34,7 @@
 		AF4EF74B2B01B8BC00873222 /* ApiEditorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */; };
 		AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */; };
 		AF6E5B4C2B1197090031FE6D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF6E5B4B2B1197090031FE6D /* GoogleService-Info.plist */; };
+		AF948A1F2B180AD30074264B /* EditarPrestamoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF948A1E2B180AD30074264B /* EditarPrestamoViewController.swift */; };
 		AF9B98642B16E98800B26E35 /* prestamo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98632B16E98800B26E35 /* prestamo.swift */; };
 		AF9B98662B16EEC600B26E35 /* ListadoPrestamoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98652B16EEC600B26E35 /* ListadoPrestamoViewController.swift */; };
 		AF9B98682B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */; };
@@ -77,6 +78,7 @@
 		AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEditorialViewController.swift; sourceTree = "<group>"; };
 		AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiLibroViewController.swift; sourceTree = "<group>"; };
 		AF6E5B4B2B1197090031FE6D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF948A1E2B180AD30074264B /* EditarPrestamoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPrestamoViewController.swift; sourceTree = "<group>"; };
 		AF9B98632B16E98800B26E35 /* prestamo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prestamo.swift; sourceTree = "<group>"; };
 		AF9B98652B16EEC600B26E35 /* ListadoPrestamoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoPrestamoViewController.swift; sourceTree = "<group>"; };
 		AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListadoPrestamoTableViewCell.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				AF9B98652B16EEC600B26E35 /* ListadoPrestamoViewController.swift */,
 				AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */,
 				AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */,
+				AF948A1E2B180AD30074264B /* EditarPrestamoViewController.swift */,
 			);
 			path = Prestamo;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				AF4EF7092B0142E600873222 /* Libro.swift in Sources */,
 				AF4EF70D2B0142FB00873222 /* Rol.swift in Sources */,
 				AF4EF7432B01B85200873222 /* ItemApiAutorTableViewCell.swift in Sources */,
+				AF948A1F2B180AD30074264B /* EditarPrestamoViewController.swift in Sources */,
 				AF4EF74B2B01B8BC00873222 /* ApiEditorialViewController.swift in Sources */,
 				AF4EF6EE2B013A2F00873222 /* ViewController.swift in Sources */,
 				AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */,
