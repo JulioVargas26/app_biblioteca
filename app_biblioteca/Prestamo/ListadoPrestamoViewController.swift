@@ -10,13 +10,10 @@ import FirebaseFirestore
 
 class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
    
-    
-
     @IBOutlet weak var tvPrestamo: UITableView!
     
     var listPrestamo:[prestamo]=[]
-    
-    var pos = 0
+    var pos = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +23,7 @@ class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UI
         //
         tvPrestamo.delegate=self
         //alto de la celda
-        tvPrestamo.rowHeight=150
+        tvPrestamo.rowHeight=120
         
         listado()
     }
@@ -45,7 +42,7 @@ class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UI
                 let tit=row["titLibro"] as! String
                 let fecP=row["fec_prestamo"] as! String
                 let fecD=row["fec_devolucion"] as! String
-                return prestamo(id: "", nomUsu: nom, titLibro: tit, fec_prestamo: fecP, fec_devolucion: fecD)
+                return prestamo(id: e.documentID, nomUsu: nom, titLibro: tit, fec_prestamo: fecP, fec_devolucion: fecD)
             }
             
             self.tvPrestamo.reloadData()
@@ -59,14 +56,33 @@ class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UI
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let row = tableView.dequeueReusableCell(withIdentifier: "ItemPrestamo", for: indexPath) as! ItemListadoPrestamoTableViewCell
             
         row.lblTitLibroPres.text = listPrestamo[indexPath.row].titLibro
         row.lblFecDLibroPres.text = listPrestamo[indexPath.row].fec_devolucion
-        row.lblUsuLibroPres.text = listPrestamo[indexPath.row].nomUsu
             
         return row
     }
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+            pos=indexPath.row
+            performSegue(withIdentifier: "editarListPres", sender: self)
+            print("pos",pos)
+        }
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            
+            if segue.identifier=="editarListPres"{
+                //crear objeto de la clase EditarViewController
+                let pantalla2=segue.destination as! EditarPrestamoViewController
+                //acceder
+                pantalla2.data=listPrestamo[pos]
+                
+                
+            }
+            
+        }
     /*
     // MARK: - Navigation
 
