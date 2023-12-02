@@ -42,6 +42,9 @@ class UserEdiViewController: UIViewController {
         txtCorUser.text = sesionMenu["sesionCOR"]
         txtTelUser.text = sesionMenu["sesionTEL"]
         
+        txtCorUser.text = sesionMenu["sesionCOR"]
+        txtTelUser.text = sesionMenu["sesionTEL"]
+        
         lblNuConUser.isHidden=true
         txtConUser.isHidden=true
         lblReConUser.isHidden=true
@@ -83,10 +86,6 @@ class UserEdiViewController: UIViewController {
         
         }
             
-            
-            
-        
-    
     @IBAction func btnActualizarUser(_ sender: UIButton) {
         
         //leer cajas

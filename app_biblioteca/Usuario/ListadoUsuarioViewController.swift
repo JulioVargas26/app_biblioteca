@@ -11,6 +11,7 @@ class ListadoUsuarioViewController: UIViewController ,UITableViewDataSource,
                                     UITableViewDelegate{
 
     @IBOutlet weak var tvUsuario: UITableView!
+    
     var listaUsuario:[UsuarioEntity]=[]
     var pos = -1
     
@@ -47,6 +48,7 @@ class ListadoUsuarioViewController: UIViewController ,UITableViewDataSource,
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         pos=indexPath.row
         performSegue(withIdentifier: "editUsuario", sender: self)
+        print("pos",pos)
     }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {

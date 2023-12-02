@@ -33,7 +33,7 @@ class UserMainViewController: UIViewController {
         
         if segue.identifier=="editarUser"{
             //crear objeto de la clase EditarViewController
-            let pantalla2=segue.destination as! UserEdiViewController
+            let pantalla2=segue.destination as! RestablecerContraseniaViewController
             //acceder
            // pantalla2.bean=data[defaults.data(forKey: "DATAUSER")]
         }
