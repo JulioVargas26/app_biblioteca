@@ -35,8 +35,8 @@ class PrestamoLibroApiViewController: UIViewController {
         
         txtIdUser.text=sesionNombre
         txtTitLibroApi.text=datPresLibApi
-        txtFecPrestamo.text=String(Date.now.formatted())
-        txtFecDevolucion.text=String(Date.now.formatted())
+        txtFecPrestamo.text=String(Date.now.formatted(date: .numeric, time: .omitted))
+        txtFecDevolucion.text=String(Date.now.formatted(date: .numeric, time: .omitted))
     }
     
     @IBAction func btnPrestar(_ sender: UIButton) {

@@ -71,6 +71,35 @@ class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UI
             print("pos",pos)
         }
         
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete{
+            tableView.beginUpdates()
+            
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+            
+        }
+    }
+    
+    func eliminarPrestamo(x:prestamo){
+        //acceder a la base de datos
+        let bd=Firestore.firestore()
+        
+        //acceder a la coleccion "tabla"
+        bd.collection("prestamo").document(x.id).delete(){error in
+            if let e=error{
+                print(e.localizedDescription)
+            }else{
+                print("Eliminacion OK")
+            }
+        }
+    }
         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             
             if segue.identifier=="editarListPres"{
