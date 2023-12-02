@@ -44,6 +44,13 @@
 		AF9B98682B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */; };
 		AFC602502B0C247E0034C4E9 /* DetalleLibroApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */; };
 		AFC602522B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */; };
+		AFFE9A5F2B1BAF6700B33D69 /* NuevoApiAutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE9A5E2B1BAF6700B33D69 /* NuevoApiAutorViewController.swift */; };
+		AFFE9A612B1BAF8700B33D69 /* NuevoApiEditorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE9A602B1BAF8700B33D69 /* NuevoApiEditorialViewController.swift */; };
+		AFFE9A632B1BAF9A00B33D69 /* NuevoApiLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE9A622B1BAF9A00B33D69 /* NuevoApiLibroViewController.swift */; };
+		AFFE9A652B1BAFB700B33D69 /* EditarApiAutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE9A642B1BAFB700B33D69 /* EditarApiAutorViewController.swift */; };
+		AFFE9A672B1BAFC900B33D69 /* EditarApiEditorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE9A662B1BAFC900B33D69 /* EditarApiEditorialViewController.swift */; };
+		AFFE9A692B1BAFD800B33D69 /* EditarApiLibroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE9A682B1BAFD800B33D69 /* EditarApiLibroViewController.swift */; };
+		AFFE9A6B2B1BB0FF00B33D69 /* RestablecerContraseniaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFE9A6A2B1BB0FF00B33D69 /* RestablecerContraseniaViewController.swift */; };
 		C3794412775498E2D62A6ACA /* Pods_app_biblioteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C3391AAFC085C56B9998FD /* Pods_app_biblioteca.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +97,13 @@
 		AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListadoPrestamoTableViewCell.swift; sourceTree = "<group>"; };
 		AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleLibroApiViewController.swift; sourceTree = "<group>"; };
 		AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestamoLibroApiViewController.swift; sourceTree = "<group>"; };
+		AFFE9A5E2B1BAF6700B33D69 /* NuevoApiAutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoApiAutorViewController.swift; sourceTree = "<group>"; };
+		AFFE9A602B1BAF8700B33D69 /* NuevoApiEditorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoApiEditorialViewController.swift; sourceTree = "<group>"; };
+		AFFE9A622B1BAF9A00B33D69 /* NuevoApiLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoApiLibroViewController.swift; sourceTree = "<group>"; };
+		AFFE9A642B1BAFB700B33D69 /* EditarApiAutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarApiAutorViewController.swift; sourceTree = "<group>"; };
+		AFFE9A662B1BAFC900B33D69 /* EditarApiEditorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarApiEditorialViewController.swift; sourceTree = "<group>"; };
+		AFFE9A682B1BAFD800B33D69 /* EditarApiLibroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarApiLibroViewController.swift; sourceTree = "<group>"; };
+		AFFE9A6A2B1BB0FF00B33D69 /* RestablecerContraseniaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestablecerContraseniaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +213,7 @@
 				AF4EF7062B0140BF00873222 /* UserMainViewController.swift */,
 				AF4EF71C2B01759700873222 /* UserRegViewController.swift */,
 				AF4EF7232B01833200873222 /* UserEdiViewController.swift */,
+				AFFE9A6A2B1BB0FF00B33D69 /* RestablecerContraseniaViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +233,8 @@
 			children = (
 				AF4EF7462B01B88100873222 /* ItemApiLibroTableViewCell.swift */,
 				AF4EF74C2B01B8D100873222 /* ApiLibroViewController.swift */,
+				AFFE9A622B1BAF9A00B33D69 /* NuevoApiLibroViewController.swift */,
+				AFFE9A682B1BAFD800B33D69 /* EditarApiLibroViewController.swift */,
 			);
 			path = ApiLibro;
 			sourceTree = "<group>";
@@ -227,6 +244,8 @@
 			children = (
 				AF4EF7442B01B86E00873222 /* ItemApiEditorialTableViewCell.swift */,
 				AF4EF74A2B01B8BC00873222 /* ApiEditorialViewController.swift */,
+				AFFE9A602B1BAF8700B33D69 /* NuevoApiEditorialViewController.swift */,
+				AFFE9A662B1BAFC900B33D69 /* EditarApiEditorialViewController.swift */,
 			);
 			path = ApiEditorial;
 			sourceTree = "<group>";
@@ -236,6 +255,8 @@
 			children = (
 				AF4EF7422B01B85200873222 /* ItemApiAutorTableViewCell.swift */,
 				AF4EF7482B01B8A900873222 /* ApiAutorViewController.swift */,
+				AFFE9A5E2B1BAF6700B33D69 /* NuevoApiAutorViewController.swift */,
+				AFFE9A642B1BAFB700B33D69 /* EditarApiAutorViewController.swift */,
 			);
 			path = ApiAutor;
 			sourceTree = "<group>";
@@ -382,10 +403,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4EF7202B017C2E00873222 /* LibroApiViewController.swift in Sources */,
+				AFFE9A5F2B1BAF6700B33D69 /* NuevoApiAutorViewController.swift in Sources */,
+				AFFE9A672B1BAFC900B33D69 /* EditarApiEditorialViewController.swift in Sources */,
 				AF4EF7092B0142E600873222 /* Libro.swift in Sources */,
 				AF4EF70D2B0142FB00873222 /* Rol.swift in Sources */,
 				AF4EF7432B01B85200873222 /* ItemApiAutorTableViewCell.swift in Sources */,
 				AF948A1F2B180AD30074264B /* EditarPrestamoViewController.swift in Sources */,
+				AFFE9A6B2B1BB0FF00B33D69 /* RestablecerContraseniaViewController.swift in Sources */,
+				AFFE9A632B1BAF9A00B33D69 /* NuevoApiLibroViewController.swift in Sources */,
 				AF4EF74B2B01B8BC00873222 /* ApiEditorialViewController.swift in Sources */,
 				AF4EF6EE2B013A2F00873222 /* ViewController.swift in Sources */,
 				AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */,
@@ -395,6 +420,7 @@
 				AF9B98642B16E98800B26E35 /* prestamo.swift in Sources */,
 				AF4EF7472B01B88100873222 /* ItemApiLibroTableViewCell.swift in Sources */,
 				AF4EF6F42B013A2F00873222 /* app_biblioteca.xcdatamodeld in Sources */,
+				AFFE9A652B1BAFB700B33D69 /* EditarApiAutorViewController.swift in Sources */,
 				AF474F322B19706100EB6DF0 /* EditarUsuarioViewController.swift in Sources */,
 				AF9B98682B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift in Sources */,
 				AF4EF7072B0140BF00873222 /* UserMainViewController.swift in Sources */,
@@ -405,6 +431,7 @@
 				AFC602522B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift in Sources */,
 				AF4EF7112B01433000873222 /* Autor.swift in Sources */,
 				AF4EF71D2B01759700873222 /* UserRegViewController.swift in Sources */,
+				AFFE9A692B1BAFD800B33D69 /* EditarApiLibroViewController.swift in Sources */,
 				AF4EF7052B0140B000873222 /* AdminMainViewController.swift in Sources */,
 				AF474F362B19708F00EB6DF0 /* ItemUsuarioTableViewCell.swift in Sources */,
 				AF4EF6EA2B013A2F00873222 /* AppDelegate.swift in Sources */,
@@ -414,6 +441,7 @@
 				AF4EF7222B017DC400873222 /* ItemLibroCollectionViewCell.swift in Sources */,
 				AF4EF70B2B0142F000873222 /* Editorial.swift in Sources */,
 				AF4EF7452B01B86E00873222 /* ItemApiEditorialTableViewCell.swift in Sources */,
+				AFFE9A612B1BAF8700B33D69 /* NuevoApiEditorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

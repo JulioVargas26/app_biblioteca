@@ -19,12 +19,12 @@ class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UI
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         tvPrestamo.dataSource=self
         //
         tvPrestamo.delegate=self
         //alto de la celda
-        tvPrestamo.rowHeight=120
-        
+        tvPrestamo.rowHeight = 130
         listado()
     }
     
@@ -53,19 +53,21 @@ class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UI
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listPrestamo.count
+        print("number",listPrestamo.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let row = tableView.dequeueReusableCell(withIdentifier: "ItemPrestamo", for: indexPath) as! ItemListadoPrestamoTableViewCell
+        //crear objeto de la clase ItemTableViewCell invocando
+        //a "celda"
+        let row=tvPrestamo.dequeueReusableCell(withIdentifier: "ItemPrestamo") as! ItemListadoPrestamoTableViewCell
             
         row.lblTitLibroPres.text = listPrestamo[indexPath.row].titLibro
         row.lblFecDLibroPres.text = listPrestamo[indexPath.row].fec_devolucion
-            
+            print("row",row)
         return row
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             pos=indexPath.row
             performSegue(withIdentifier: "editarListPres", sender: self)
             print("pos",pos)
@@ -80,6 +82,7 @@ class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UI
         if editingStyle == .delete{
             tableView.beginUpdates()
             
+            //eliminarPrestamo(x: prestamo.id)
             
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()

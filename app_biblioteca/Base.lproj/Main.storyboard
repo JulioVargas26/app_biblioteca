@@ -18,16 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oyE-Zb-pJb">
-                                <rect key="frame" x="102" y="770" width="184" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Cambiar Contrasenia"/>
-                                <connections>
-                                    <segue destination="oGJ-fS-U3R" kind="show" identifier="cambiarContrasenia" id="3t0-Xb-jff"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8yY-UP-AR8">
                                 <rect key="frame" x="71" y="622" width="250" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -509,7 +499,7 @@
         <!--registrar libro-->
         <scene sceneID="khT-am-F7I">
             <objects>
-                <viewController title="registrar libro" id="1ws-N6-Ps8" sceneMemberID="viewController">
+                <viewController title="registrar libro" id="1ws-N6-Ps8" customClass="NuevoApiLibroViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iS6-D3-6BH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -597,7 +587,7 @@
         <!--editar libro-->
         <scene sceneID="0jL-NZ-LVY">
             <objects>
-                <viewController title="editar libro" id="cUH-Pe-BMM" sceneMemberID="viewController">
+                <viewController title="editar libro" id="cUH-Pe-BMM" customClass="EditarApiLibroViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6P5-ba-HP8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -685,7 +675,7 @@
         <!--registrar autor-->
         <scene sceneID="IZ4-s8-HrN">
             <objects>
-                <viewController title="registrar autor" id="8US-f6-2m6" sceneMemberID="viewController">
+                <viewController title="registrar autor" id="8US-f6-2m6" customClass="NuevoApiAutorViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00A-hO-qnF">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -760,7 +750,7 @@
         <!--editar autor-->
         <scene sceneID="92x-Ip-0yN">
             <objects>
-                <viewController title="editar autor" id="fUC-ya-RlS" sceneMemberID="viewController">
+                <viewController title="editar autor" id="fUC-ya-RlS" customClass="EditarApiAutorViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="os8-LS-H7a">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -835,7 +825,7 @@
         <!--registrar editorial-->
         <scene sceneID="5FM-mo-sLN">
             <objects>
-                <viewController title="registrar editorial" id="Nu3-xD-g68" sceneMemberID="viewController">
+                <viewController title="registrar editorial" id="Nu3-xD-g68" customClass="NuevoApiEditorialViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EDW-Ge-shO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1411,7 +1401,7 @@
         <!--editar editorial-->
         <scene sceneID="8So-5d-1nj">
             <objects>
-                <viewController title="editar editorial" id="7TI-FT-ajQ" sceneMemberID="viewController">
+                <viewController title="editar editorial" id="7TI-FT-ajQ" customClass="EditarApiEditorialViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c62-1z-gZv">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1626,7 +1616,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vPt-iP-3hT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1678.6259541984732" y="1416.9014084507044"/>
+            <point key="canvasLocation" x="569" y="1771"/>
         </scene>
         <!--main usuario-->
         <scene sceneID="Chi-Ib-JSa">
@@ -1647,7 +1637,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="btnEditarDatosUser:" destination="pF1-xD-CHi" eventType="touchUpInside" id="ED2-bx-Wwz"/>
-                                    <segue destination="CgD-bt-5E5" kind="show" identifier="editarUser" id="DIg-DB-p9O"/>
+                                    <segue destination="oGJ-fS-U3R" kind="show" identifier="editarUser" id="5Zb-dl-qEP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFD-Nc-NnU">
@@ -1722,7 +1712,7 @@
             <objects>
                 <viewController title="listado libro" id="WD7-g6-QFh" customClass="LibroApiViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oD3-d3-Zsc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listados de Libros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9H-Oa-uiJ">
@@ -1807,7 +1797,7 @@
             <objects>
                 <viewController title="detalle libro" id="Vzh-xc-6Wc" customClass="DetalleLibroApiViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PNb-D8-Jy4">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Titulos de Libros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxh-iT-Sj5">
@@ -1894,7 +1884,7 @@
             <objects>
                 <viewController title="Listado Prestamo" id="kUd-02-6wy" customClass="ListadoPrestamoViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D1U-Cq-paX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Listados de Prestamos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fht-lY-wea">
@@ -1988,7 +1978,7 @@
             <objects>
                 <viewController title="Editar Prestamo" id="YNy-4Q-vPI" customClass="EditarPrestamoViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Afa-kQ-caw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E52-W2-sII">
@@ -2095,7 +2085,7 @@
             <objects>
                 <viewController title="prestamo libro" id="3gd-x5-138" customClass="PrestamoLibroApiViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UKe-q5-WfO">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCa-dN-gL3">
@@ -2320,7 +2310,7 @@
         <!--cambia contrasenia-->
         <scene sceneID="aKS-xS-9zY">
             <objects>
-                <viewController title="cambia contrasenia" id="oGJ-fS-U3R" sceneMemberID="viewController">
+                <viewController title="cambia contrasenia" id="oGJ-fS-U3R" customClass="RestablecerContraseniaViewController" customModule="app_biblioteca" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xis-iJ-lFJ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2331,14 +2321,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cambiar Contrasenia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fK-AE-gd7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reestablecer Contrasenia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fK-AE-gd7">
                                 <rect key="frame" x="16" y="103" width="361" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0x-ar-Ruv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correo Electronico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0x-ar-Ruv">
                                 <rect key="frame" x="39" y="161" width="300" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -2371,23 +2361,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmn-Th-HpT">
-                                <rect key="frame" x="33" y="408" width="133" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="radio_off" title=" Aceptar"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AA-t6-RF6">
                                 <rect key="frame" x="39" y="464" width="306" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cambiar Contrasenia"/>
+                                <connections>
+                                    <action selector="btnReestablecer:" destination="oGJ-fS-U3R" eventType="touchUpInside" id="HHY-FP-5JT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vV7-E6-5D4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="1he-fr-6Pl"/>
+                    <connections>
+                        <outlet property="txtContra" destination="FS5-zN-f3J" id="R8K-zV-9M5"/>
+                        <outlet property="txtContra2" destination="F3E-J8-1rv" id="uD3-nP-6fL"/>
+                        <outlet property="txtUserCorreo" destination="0AC-uf-CP0" id="QRb-rU-3Kc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zhB-dw-SsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2414,7 +2406,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="GYZ-9Z-ClU"/>
+        <segue reference="QSa-Mw-SJl"/>
         <segue reference="nL2-0Z-osH"/>
         <segue reference="hrj-u8-fu2"/>
     </inferredMetricsTieBreakers>
