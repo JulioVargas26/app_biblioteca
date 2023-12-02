@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF474F302B19704000EB6DF0 /* ListadoUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF474F2F2B19704000EB6DF0 /* ListadoUsuarioViewController.swift */; };
+		AF474F322B19706100EB6DF0 /* EditarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF474F312B19706100EB6DF0 /* EditarUsuarioViewController.swift */; };
+		AF474F342B19707C00EB6DF0 /* RegistrarUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF474F332B19707C00EB6DF0 /* RegistrarUsuarioViewController.swift */; };
+		AF474F362B19708F00EB6DF0 /* ItemUsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF474F352B19708F00EB6DF0 /* ItemUsuarioTableViewCell.swift */; };
 		AF4EF6EA2B013A2F00873222 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF6E92B013A2F00873222 /* AppDelegate.swift */; };
 		AF4EF6EC2B013A2F00873222 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF6EB2B013A2F00873222 /* SceneDelegate.swift */; };
 		AF4EF6EE2B013A2F00873222 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EF6ED2B013A2F00873222 /* ViewController.swift */; };
@@ -38,8 +42,6 @@
 		AF9B98642B16E98800B26E35 /* prestamo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98632B16E98800B26E35 /* prestamo.swift */; };
 		AF9B98662B16EEC600B26E35 /* ListadoPrestamoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98652B16EEC600B26E35 /* ListadoPrestamoViewController.swift */; };
 		AF9B98682B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */; };
-		AFAB26012B0912C90087A6EE /* UsuarioApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB26002B0912C90087A6EE /* UsuarioApi.swift */; };
-		AFAB26032B09138F0087A6EE /* RolApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAB26022B09138F0087A6EE /* RolApi.swift */; };
 		AFC602502B0C247E0034C4E9 /* DetalleLibroApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */; };
 		AFC602522B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */; };
 		C3794412775498E2D62A6ACA /* Pods_app_biblioteca.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97C3391AAFC085C56B9998FD /* Pods_app_biblioteca.framework */; };
@@ -49,6 +51,10 @@
 		472B759D404D3E59E35C282E /* Pods-app_biblioteca.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_biblioteca.release.xcconfig"; path = "Target Support Files/Pods-app_biblioteca/Pods-app_biblioteca.release.xcconfig"; sourceTree = "<group>"; };
 		97C3391AAFC085C56B9998FD /* Pods_app_biblioteca.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_app_biblioteca.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6FA997C1C1FF37561E3F44 /* Pods-app_biblioteca.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-app_biblioteca.debug.xcconfig"; path = "Target Support Files/Pods-app_biblioteca/Pods-app_biblioteca.debug.xcconfig"; sourceTree = "<group>"; };
+		AF474F2F2B19704000EB6DF0 /* ListadoUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoUsuarioViewController.swift; sourceTree = "<group>"; };
+		AF474F312B19706100EB6DF0 /* EditarUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarUsuarioViewController.swift; sourceTree = "<group>"; };
+		AF474F332B19707C00EB6DF0 /* RegistrarUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewController.swift; sourceTree = "<group>"; };
+		AF474F352B19708F00EB6DF0 /* ItemUsuarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemUsuarioTableViewCell.swift; sourceTree = "<group>"; };
 		AF4EF6E62B013A2F00873222 /* app_biblioteca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = app_biblioteca.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4EF6E92B013A2F00873222 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF4EF6EB2B013A2F00873222 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +88,6 @@
 		AF9B98632B16E98800B26E35 /* prestamo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prestamo.swift; sourceTree = "<group>"; };
 		AF9B98652B16EEC600B26E35 /* ListadoPrestamoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListadoPrestamoViewController.swift; sourceTree = "<group>"; };
 		AF9B98672B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListadoPrestamoTableViewCell.swift; sourceTree = "<group>"; };
-		AFAB26002B0912C90087A6EE /* UsuarioApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioApi.swift; sourceTree = "<group>"; };
-		AFAB26022B09138F0087A6EE /* RolApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolApi.swift; sourceTree = "<group>"; };
 		AFC6024F2B0C247E0034C4E9 /* DetalleLibroApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleLibroApiViewController.swift; sourceTree = "<group>"; };
 		AFC602512B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestamoLibroApiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +121,17 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AF474F2E2B196F9D00EB6DF0 /* Usuario */ = {
+			isa = PBXGroup;
+			children = (
+				AF474F2F2B19704000EB6DF0 /* ListadoUsuarioViewController.swift */,
+				AF474F312B19706100EB6DF0 /* EditarUsuarioViewController.swift */,
+				AF474F332B19707C00EB6DF0 /* RegistrarUsuarioViewController.swift */,
+				AF474F352B19708F00EB6DF0 /* ItemUsuarioTableViewCell.swift */,
+			);
+			path = Usuario;
+			sourceTree = "<group>";
+		};
 		AF4EF6DD2B013A2E00873222 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +153,7 @@
 		AF4EF6E82B013A2F00873222 /* app_biblioteca */ = {
 			isa = PBXGroup;
 			children = (
+				AF474F2E2B196F9D00EB6DF0 /* Usuario */,
 				AF9B98692B16EF0300B26E35 /* Prestamo */,
 				AFDCA4732B0ADFC60071218A /* Entity */,
 				AF4EF71E2B017BF400873222 /* LibroApi */,
@@ -238,8 +254,6 @@
 		AFDCA4732B0ADFC60071218A /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				AFAB26002B0912C90087A6EE /* UsuarioApi.swift */,
-				AFAB26022B09138F0087A6EE /* RolApi.swift */,
 				AF4EF7102B01433000873222 /* Autor.swift */,
 				AF4EF70A2B0142F000873222 /* Editorial.swift */,
 				AF4EF7082B0142E600873222 /* Libro.swift */,
@@ -376,26 +390,28 @@
 				AF4EF6EE2B013A2F00873222 /* ViewController.swift in Sources */,
 				AF4EF74D2B01B8D100873222 /* ApiLibroViewController.swift in Sources */,
 				AF9B98662B16EEC600B26E35 /* ListadoPrestamoViewController.swift in Sources */,
+				AF474F342B19707C00EB6DF0 /* RegistrarUsuarioViewController.swift in Sources */,
 				AF4EF71B2B015F6700873222 /* LoginController.swift in Sources */,
 				AF9B98642B16E98800B26E35 /* prestamo.swift in Sources */,
 				AF4EF7472B01B88100873222 /* ItemApiLibroTableViewCell.swift in Sources */,
 				AF4EF6F42B013A2F00873222 /* app_biblioteca.xcdatamodeld in Sources */,
+				AF474F322B19706100EB6DF0 /* EditarUsuarioViewController.swift in Sources */,
 				AF9B98682B16EEFE00B26E35 /* ItemListadoPrestamoTableViewCell.swift in Sources */,
 				AF4EF7072B0140BF00873222 /* UserMainViewController.swift in Sources */,
 				AF4EF7492B01B8A900873222 /* ApiAutorViewController.swift in Sources */,
+				AF474F302B19704000EB6DF0 /* ListadoUsuarioViewController.swift in Sources */,
 				AFC602502B0C247E0034C4E9 /* DetalleLibroApiViewController.swift in Sources */,
-				AFAB26032B09138F0087A6EE /* RolApi.swift in Sources */,
 				AF4EF7192B015B9C00873222 /* UsuarioController.swift in Sources */,
 				AFC602522B0C4A970034C4E9 /* PrestamoLibroApiViewController.swift in Sources */,
 				AF4EF7112B01433000873222 /* Autor.swift in Sources */,
 				AF4EF71D2B01759700873222 /* UserRegViewController.swift in Sources */,
 				AF4EF7052B0140B000873222 /* AdminMainViewController.swift in Sources */,
+				AF474F362B19708F00EB6DF0 /* ItemUsuarioTableViewCell.swift in Sources */,
 				AF4EF6EA2B013A2F00873222 /* AppDelegate.swift in Sources */,
 				AF4EF6EC2B013A2F00873222 /* SceneDelegate.swift in Sources */,
 				AF4EF70F2B01430C00873222 /* Usuario.swift in Sources */,
 				AF4EF7242B01833200873222 /* UserEdiViewController.swift in Sources */,
 				AF4EF7222B017DC400873222 /* ItemLibroCollectionViewCell.swift in Sources */,
-				AFAB26012B0912C90087A6EE /* UsuarioApi.swift in Sources */,
 				AF4EF70B2B0142F000873222 /* Editorial.swift in Sources */,
 				AF4EF7452B01B86E00873222 /* ItemApiEditorialTableViewCell.swift in Sources */,
 			);
