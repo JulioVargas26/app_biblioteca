@@ -18,6 +18,7 @@ class ApiLibroViewController: UIViewController,UITableViewDataSource,UITableView
     
     var pos = -1
     var listaLibro:[Libro]=[]
+    var urlLibro="https://api-biblioteca-nl19.onrender.com/api/libro"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,7 @@ class ApiLibroViewController: UIViewController,UITableViewDataSource,UITableView
     func cargarLibro(){
         
         //conexion a la url del api
-        AF.request("https://api-biblioteca-nl19.onrender.com/api/libro").responseDecodable(of: [Libro].self){
+        AF.request(urlLibro).responseDecodable(of: [Libro].self){
             
             response in guard let data=response.value else{return}
             
@@ -42,6 +43,21 @@ class ApiLibroViewController: UIViewController,UITableViewDataSource,UITableView
             
             self.listaLibro=data
             self.tvLibro.reloadData()
+        }
+        
+    }
+    
+    func eliminarLibro(cod: Int){
+        AF.request(urlLibro+"/"+String(cod),method: .delete
+        ).responseData{ data in
+            //validar data
+            switch data.result{
+            case.success(let info):
+                print("correcto")
+            case .failure(let error):
+                print(error)
+            }
+            
         }
         
     }
@@ -59,6 +75,41 @@ class ApiLibroViewController: UIViewController,UITableViewDataSource,UITableView
         row.lblAniLibro.text=String(listaLibro[indexPath.row].anio_publicacion)
         row.lblEdiLibro.text=listaLibro[indexPath.row].editorial.nombre
             return row
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        pos=indexPath.row
+        performSegue(withIdentifier: "editarLibroApi", sender: self)
+        print("pos",pos)
+    }
+    
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete{
+            tableView.beginUpdates()
+            
+            var del=listaLibro.remove(at: indexPath.row)
+            eliminarLibro(cod: del.id)
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.endUpdates()
+            
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           
+        if segue.identifier=="editarLibroApi"{
+            //crear objeto de la clase EditarViewController
+            let autor=segue.destination as! EditarApiLibroViewController
+            //acceder
+            autor.data=listaLibro[pos]
+        }
+        
     }
     
     @IBAction func btnBuscarLibro(_ sender: UIButton) {

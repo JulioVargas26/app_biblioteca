@@ -518,10 +518,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFg-h0-19B">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WFg-h0-19B">
                                 <rect key="frame" x="16" y="196" width="361" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4hM-qu-q50">
@@ -531,12 +531,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KEG-Ib-1EI">
-                                <rect key="frame" x="16" y="277" width="361" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anio Publicacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQL-ON-Bjl">
                                 <rect key="frame" x="16" y="319" width="345" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -557,12 +551,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xxp-gc-LYw">
-                                <rect key="frame" x="16" y="439" width="361" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dy0-qG-Ft4">
                                 <rect key="frame" x="16" y="738" width="361" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -573,16 +561,37 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnRegistrar:" destination="1ws-N6-Ps8" eventType="touchUpInside" id="Sh2-3f-sO4"/>
+                                </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KdI-RO-9iH">
+                                <rect key="frame" x="16" y="277" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tB8-tP-HBI">
+                                <rect key="frame" x="16" y="439" width="361" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U0T-4J-i34"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="BuL-gB-iKV"/>
+                    <connections>
+                        <outlet property="txtAutor" destination="KdI-RO-9iH" id="jt9-pD-IUn"/>
+                        <outlet property="txtEditorial" destination="tB8-tP-HBI" id="D7S-2s-axn"/>
+                        <outlet property="txtPublicacion" destination="2Vx-pb-Z56" id="r4Q-j4-Cew"/>
+                        <outlet property="txtTitulo" destination="WFg-h0-19B" id="mP4-V9-sQd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w3o-2b-cE9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1888" y="-1756"/>
+            <point key="canvasLocation" x="1887.7862595419847" y="-1756.3380281690143"/>
         </scene>
         <!--editar libro-->
         <scene sceneID="0jL-NZ-LVY">
@@ -661,12 +670,21 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnActualizar:" destination="cUH-Pe-BMM" eventType="touchUpInside" id="w3F-yU-hut"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KKr-qW-JGR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="EJp-3v-MWa"/>
+                    <connections>
+                        <outlet property="txtAutor" destination="OIA-nG-BXm" id="72x-zR-K2Z"/>
+                        <outlet property="txtEditorial" destination="unU-kD-3zY" id="zCb-FW-50m"/>
+                        <outlet property="txtPublicacion" destination="oSU-Ph-IvG" id="77C-xO-zrX"/>
+                        <outlet property="txtTitulo" destination="dCP-2G-0SK" id="JRk-JB-4Eo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMI-T1-SOY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -736,12 +754,20 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnRegistrar:" destination="8US-f6-2m6" eventType="touchUpInside" id="kgA-cw-ekF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="f4F-Du-9Po"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="0hK-T5-dZc"/>
+                    <connections>
+                        <outlet property="txtFecNac" destination="FX8-Dq-M04" id="tDX-Lb-r1k"/>
+                        <outlet property="txtNombre" destination="5Ga-CG-MVm" id="hCp-yI-X3n"/>
+                        <outlet property="txtPais" destination="kPq-E6-bid" id="Tmt-3X-JZD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yj8-5q-Tdk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -811,12 +837,20 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnActualizar:" destination="fUC-ya-RlS" eventType="touchUpInside" id="nhu-Hv-mxH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j2B-XC-ydh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ry6-72-M9s"/>
+                    <connections>
+                        <outlet property="txtFecNac" destination="UZ5-Pq-abQ" id="Xoy-tu-2gc"/>
+                        <outlet property="txtNombre" destination="KLK-hP-seN" id="E7S-FS-dCa"/>
+                        <outlet property="txtPais" destination="y1C-JA-skY" id="VYe-4H-3Oo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lS8-8O-Eb5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -886,12 +920,20 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnRegistrar:" destination="Nu3-xD-g68" eventType="touchUpInside" id="bev-bF-jU8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Huk-JT-d0B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="FXl-wv-cDc"/>
+                    <connections>
+                        <outlet property="txtDireccion" destination="Cny-b6-jFT" id="Pzm-1Y-lli"/>
+                        <outlet property="txtNombre" destination="axk-ix-Epc" id="EUh-zT-gfI"/>
+                        <outlet property="txtTelefono" destination="lBk-aX-mBe" id="aY7-5A-xfW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ejK-0g-dss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1032,7 +1074,7 @@
                     <connections>
                         <outlet property="tvLibro" destination="Qy1-fF-39M" id="0dl-aw-Nnm"/>
                         <outlet property="txtFiltrarLibro" destination="qQf-54-D6z" id="ZLP-Wh-iz2"/>
-                        <segue destination="cUH-Pe-BMM" kind="show" id="D7W-Mq-Och"/>
+                        <segue destination="cUH-Pe-BMM" kind="show" identifier="editarLibroApi" id="D7W-Mq-Och"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIf-nQ-SVx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1391,7 +1433,7 @@
                     <connections>
                         <outlet property="tvEditorial" destination="3Th-s1-UTd" id="b7P-aq-ta1"/>
                         <outlet property="txtFiltrarEditorial" destination="R7B-t8-jGS" id="g3L-P5-LTg"/>
-                        <segue destination="7TI-FT-ajQ" kind="show" id="v4I-r4-Ryg"/>
+                        <segue destination="7TI-FT-ajQ" kind="show" identifier="editarEditorialApi" id="v4I-r4-Ryg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bE9-c4-bbH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1462,16 +1504,24 @@
                                     </backgroundConfiguration>
                                     <color key="baseForegroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="btnActualizar:" destination="7TI-FT-ajQ" eventType="touchUpInside" id="3ps-AF-HfB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fXr-cO-e0c"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="zAL-KZ-etS"/>
+                    <connections>
+                        <outlet property="txtDireccion" destination="7wK-VJ-Srp" id="LtU-Os-yvI"/>
+                        <outlet property="txtNombre" destination="nXp-3O-iGk" id="NmC-dw-xX0"/>
+                        <outlet property="txtTelefono" destination="Eh5-1A-osX" id="uOs-eY-6Ub"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXC-SX-mei" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6351.9083969465646" y="-657.04225352112678"/>
+            <point key="canvasLocation" x="6244" y="-1091"/>
         </scene>
         <!--actualizar datos-->
         <scene sceneID="EWT-3w-LdG">
@@ -2408,7 +2458,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="QSa-Mw-SJl"/>
         <segue reference="nL2-0Z-osH"/>
-        <segue reference="hrj-u8-fu2"/>
+        <segue reference="O4G-bn-cp9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="033fb1023a10557471c056ce003c48e6" width="512" height="512"/>

@@ -82,7 +82,7 @@ class ListadoPrestamoViewController: UIViewController, UITableViewDataSource, UI
         if editingStyle == .delete{
             tableView.beginUpdates()
             
-            //eliminarPrestamo(x: prestamo.id)
+           // eliminarPrestamo(x: )
             
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
