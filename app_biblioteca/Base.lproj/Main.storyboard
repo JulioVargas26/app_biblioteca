@@ -755,7 +755,7 @@
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="btnRegistrar:" destination="8US-f6-2m6" eventType="touchUpInside" id="kgA-cw-ekF"/>
+                                    <action selector="btnRegistrar:" destination="8US-f6-2m6" eventType="touchUpInside" id="8Jf-Pm-TvE"/>
                                 </connections>
                             </button>
                         </subviews>
